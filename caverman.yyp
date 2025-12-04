@@ -12,6 +12,7 @@
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"order":3,},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},"order":0,},
     {"id":{"name":"obj_flag","path":"objects/obj_flag/obj_flag.yy",},"order":1,},
+    {"id":{"name":"spr_jump","path":"sprites/spr_jump/spr_jump.yy",},"order":5,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
