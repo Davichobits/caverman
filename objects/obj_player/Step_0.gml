@@ -1,7 +1,7 @@
 // --- INPUT ---
 var keyright = keyboard_check(vk_right);
 var keyleft  = keyboard_check(vk_left);
-var keyup    = keyboard_check_pressed(vk_up);
+var keyup    = keyboard_check_pressed(vk_space);
 
 var move = keyright - keyleft;
 
@@ -12,22 +12,22 @@ vertical_speed += player_gravity;
 
 var check_offset = (vertical_speed >= 0) ? 1 : vertical_speed;
 // MOVIMIENTO EN X
-move_and_collide(horizontal_speed, 0, obj_ground);
+move_and_collide(horizontal_speed, 0, obj_platform);
 
 // MOVIMIENTO EN Y
-if (!place_meeting(x, y + vertical_speed, obj_ground)) {
+if (!place_meeting(x, y + vertical_speed, obj_platform)) {
     y += vertical_speed;
 } else {
     // si chocamos hacia abajo
     if (vertical_speed > 0) {
-        while (!place_meeting(x, y + 1, obj_ground)) y += 1;
+        while (!place_meeting(x, y + 1, obj_platform)) y += 1;
         on_ground = true;
     }
 
     vertical_speed = 0;
 }
 
-var on_ground = place_meeting(x, y + check_offset, obj_ground);
+var on_ground = place_meeting(x, y + check_offset, obj_platform);
 
 
 
