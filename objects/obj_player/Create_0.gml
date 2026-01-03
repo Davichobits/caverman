@@ -1,13 +1,5 @@
-// Movimiento
-walkspeed = 4;
-jumpheight = 10;
-player_gravity = 0.5;
-
-horizontal_speed = 0;
-vertical_speed = 0;
-
 // Estados
-state = "idle";
+state = PlayerState.IDLE;
 
 // Sprites
 spr_idle  = spr_player_idle;
