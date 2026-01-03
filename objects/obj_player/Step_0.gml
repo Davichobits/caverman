@@ -39,4 +39,11 @@ if (key_left)  image_xscale = -1;
 
 change_animations();
 
-move_cam();
+//move_cam();
+
+if (x < 0) {
+    x = room_width;
+}
+else if (x > room_width) {
+    x = 0;
+}
